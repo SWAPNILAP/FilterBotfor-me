@@ -84,8 +84,8 @@ async def maincallback(client: FilterBot, message):
         await message.message.edit(text=HelpTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "about":
-        keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/hDGgPNgjo9o'),
-                       InlineKeyboardButton('Repo', url='https://github.com/PR0FESS0R-99/FilterBot') ],
+        keyboard = [[ InlineKeyboardButton('OWNER', url='https://t.me/Lion_098765'),
+                       InlineKeyboardButton('Repo', url='https://github.com/SWAPNILAP/FilterBotfor-me') ],
                     [ InlineKeyboardButton('Home', callback_data='main#start'),
                       InlineKeyboardButton('Help', callback_data='main#help') ]]
         await message.message.edit(text=AboutTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
