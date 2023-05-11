@@ -3,7 +3,7 @@ Hello {mention}
 
 I'm an advanced filter bot with many capabilities!
 
-Note{I'm not a movie provider bot}(only a filter bot)
+🛑 Note:I am not a movie search 🔍 bot I am a filter bot 
 
 There is no practical limits for my filtering capacity :)
 
