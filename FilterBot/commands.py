@@ -72,10 +72,10 @@ async def maincallback(client: FilterBot, message):
     if type == "start":
         bot = await client.get_me()
         keyboard = [[ InlineKeyboardButton('Add Me To Your Chat', url=f"t.me/{bot.username}?startgroup=true") ],
-                    [ InlineKeyboardButton('Help', callback_data='main#help'),
-                      InlineKeyboardButton('About', callback_data='main#about') ],
+                    [ InlineKeyboardButton('Help🆘', callback_data='main#help'),
+                      InlineKeyboardButton('About😁', callback_data='main#about') ],
                     [ InlineKeyboardButton('Update', url='https://t.me/CHEKUTHANUPADTE'),
-                      InlineKeyboardButton('onwer', url='https://t.me/Lion_098765') ]]
+                      InlineKeyboardButton('OWNER😎', url='https://t.me/Lion_098765') ]]
         await message.message.edit(text=StartTxT.format(mention=message.from_user.mention), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "help":
@@ -85,7 +85,7 @@ async def maincallback(client: FilterBot, message):
 
     elif type == "about":
         keyboard = [[ InlineKeyboardButton('OWNER', url='https://t.me/Lion_098765'),
-                       InlineKeyboardButton('Repo', url='https://github.com/SWAPNILAP/FilterBotfor-me') ],
+                       InlineKeyboardButton('Repo☑️', url='https://github.com/SWAPNILAP/FilterBotfor-me') ],
                     [ InlineKeyboardButton('Home', callback_data='main#start'),
                       InlineKeyboardButton('Help', callback_data='main#help') ]]
         await message.message.edit(text=AboutTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
